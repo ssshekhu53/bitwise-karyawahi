@@ -8,6 +8,12 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+@media screen and (min-width: 500px) {
+    .w-lg-25 {
+        width: 25% !important;
+    }    
+}
+
 .footer {
     position: fixed;
     bottom: 0;
