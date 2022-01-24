@@ -7,3 +7,19 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
 }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 5px 8px;
+    background: #FFFFFF;
+    box-shadow: -1px -1px 10px rgb(165, 162, 162);
+    border-radius: 5px 0 0 5px;
+    font-size: small;
+}
+ 
+.footer a {
+    font-weight: bolder;
+    text-decoration: none;
+}
