@@ -5,7 +5,7 @@ $(document).on('submit', 'form#evaluator-form', function(e) {
         $(this).find('input[name="result"]').val(eval(expression));
 });
 
-$(document).on('keypress', 'form#evaluator-form input[name="expr"]', function(e) {
+$(document).on('keydown', 'form#evaluator-form input[name="expr"]', function(e) {
     e.preventDefault();
     if(expressionValidator(String.fromCharCode(e.keyCode)))
         e.target.value=e.target.value+String.fromCharCode(e.keyCode);
@@ -13,7 +13,7 @@ $(document).on('keypress', 'form#evaluator-form input[name="expr"]', function(e)
         e.target.value=e.target.value;
 });
 
-$(document).on('keypress', 'form#calculator-form input[name="num[]"]', function(e) {
+$(document).on('keydown', 'form#calculator-form input[name="num[]"]', function(e) {
     e.preventDefault();
     if(valueValidator(String.fromCharCode(e.keyCode)))
         e.target.value=e.target.value+String.fromCharCode(e.keyCode);
